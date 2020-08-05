@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*(
+    box-sizing: border-box;
+)
+body {
+    background-color: #E5E5E5;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-contanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-h1 {
+    text-align: center;
+    font-size: 32px; 
+    margin-bottom: 63px;
+    font-family: 'Space Mono', monospace;
+}
+.hero-image {
+    width: 100%;
+    margin-left: 29px;
+    margin-right:32px;
+    margin-bottom: 111px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-h2 {
+    align-self: center;
+    font-size: 19px;
+    /* margin-left: 29px; */
+    font-weight: bold;
+    word-spacing: 3px;
+    margin-bottom: 26px;
+    font-family: 'Space Mono', monospace;
+}
+.paragraph{
+    text-align: left;
+    margin-left: 41px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-family: 'Space Mono', monospace;
+}
+button {
+    color: #fff;
+    border: none;
+    background-color: #6C63FF;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 291px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    /* width: 100vw; */
+    margin-left: 42px;
+    margin-top: 54px;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+}
+@media (min-width: 768px) {
+    
+    .hero-container {
+        display: grid;
+        grid-template-areas:  "b a" 
+                              "b c";
+    }
+    .hero-h1 {
+        display: inline;
+        grid-area: a;
+        margin-top: 164px;
+        margin-bottom: 0;
+        margin-right: 114px;
+        margin-left: 80px;
+        font-size: 40px;
+    }
+    .hero-image {
+        width: 50vw;
+        height: 50vh;
+        align-content: center;
+        align-items: center;
+        margin-top: 238px;
+        margin-right: 251px;
+        margin-left:85px;
+        margin-bottom: 237px;
+        grid-area: b;
+        margin-right: 50px;
+    }
+    .container {
+        grid-area: c;
+         margin-top: -190px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 11
+    }
+    .hero-h2 {
+       margin-right: 114px;
+       font-size: 24px;
+       margin-left: 150px;
+    }
+    .paragraph {
+        font-size: 23px;
+        margin-top: 67px;
+        width: 374px;
+    }
+    button {
+        font-size: 25px;
+        margin-top: 120px;
+        width:367px;
+        height:64px;
+    }
+}
